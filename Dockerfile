@@ -14,7 +14,7 @@ COPY --from=setup /app/vendor /setup/vendor
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
 ENTRYPOINT ["/entrypoint.sh"]
+
 CMD ["php", "vendor/bin/phpunit"]
 
